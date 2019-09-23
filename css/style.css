@@ -1,0 +1,197 @@
+html, body, .background {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #fff;
+}
+
+body {
+  background: #eee;
+  background: linear-gradient(0deg, rgba(0, 0, 200, 0.2), rgba(0, 0, 200, 0));
+}
+
+.background {
+  background: #eee;
+  background: linear-gradient(120deg, rgba(50, 150, 100, 0.2), rgba(0, 0, 100, 0));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  position: relative;
+  background: #eee;
+  background: linear-gradient(240deg, rgba(150, 50, 50, 0.3), rgba(0, 0, 200, 0));
+}
+
+#card {
+  box-shadow: 9px 7px 40px -6px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  width: 300px;
+  padding: 0;
+  height: 400px;
+  min-height: 300px;
+  margin: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+#card .city {
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  color: #888;
+  transition: color 2s ease;
+  font-size: 32px;
+  text-align: center;  
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: groove 4px #9EC1D4;
+  margin-left:20px;
+  margin-right:20px; 
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 5s;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example {
+ 0% {opacity: 0;}
+ 10% {opacity: 0.2;}
+ 20% {opacity: 0.4;}
+ 30% {opacity:0.6;}
+ 40% {opacity: 0.8;}
+ 50% {opacity: 1;}
+ 60% {opacity: 1;}
+ 70% {opacity:1;}
+ 80% {opacity:1;}
+ 90% {opacity:1;}
+ 100% {opacity:1;}
+}
+
+@keyframes example {
+  0% {opacity: 0;}
+  10% {opacity: 0.2;}
+ 20% {opacity: 0.4;}
+ 30% {opacity:0.6;}
+ 40% {opacity: 0.8;}
+ 50% {opacity: 1;}
+ 60% {opacity: 1;}
+ 70% {opacity:1;}
+ 80% {opacity:1;}
+ 90% {opacity:1;}
+ 100% {opacity:1;}
+}
+#card .details {
+  position: absolute;
+  top:150;
+  left: 0;
+  right: 0;
+  padding: 16px 20px;
+  color: #888;
+  display: flex;
+  flex-direction: row;
+  transition: color 2s ease;  
+   -webkit-animation-name: example;
+  -webkit-animation-duration: 5s;
+  animation-name: example;
+  animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.thunder #card .details {
+  color: #ddd;
+}
+#card .details .right {
+  vertical-align: top;
+  text-align: right;
+  padding-top: 40px;}
+
+#card .details .temp {
+  font-size: 80px;
+  line-height: 80px;
+  vertical-align: right;
+  padding-top: 70px;
+}
+
+#card .details .grad {
+  font-size: 28px;
+  line-height: 60px;
+  vertical-align: top;
+  padding-top: 70px;
+} 
+
+#card .humidity {
+  position: absolute;
+  top: 190px;
+  left: 0;
+  right: 0;
+  padding: 16px 20px;
+  color: #888;
+  display: flex;
+  flex-direction: row;
+  transition: color 2s ease;
+  font-size: 28px; 
+   -webkit-animation-name: example;
+  -webkit-animation-duration: 5s;
+  animation-name: example;
+  animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#card .windSpeed {
+  position: absolute;
+  top: 230px;
+  left: 0;
+  right: 0;
+  padding: 16px 20px;
+  color: #888;
+  display: flex;
+  flex-direction: row;
+  transition: color 2s ease;
+  font-size: 28px; 
+   -webkit-animation-name: example;
+  -webkit-animation-duration: 5s;
+  animation-name: example;
+  animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#card .pressure {
+  position: absolute;
+  top: 270px;
+  left: 0;
+  right: 0;
+  padding: 16px 20px;
+  color: #888;
+  display: flex;
+  flex-direction: row;
+  transition: color 2s ease;
+  font-size: 28px; 
+   -webkit-animation-name: example;
+  -webkit-animation-duration: 5s;
+  animation-name: example;
+  animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+  .weather {
+  background-color: #DAE3FD;
+  transition: background-color 2s ease;
+}
+.weather #inner {
+  background-color: white;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+}
+

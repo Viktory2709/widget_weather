@@ -1,0 +1,37 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="background">
+		<div class="container">	
+			<div id="card" class="weather">					
+				<div class="city" id="city"></div>
+				<div class="details">					
+					<div class="temp" id="temp"></div>
+					<div class="grad">&#8451;</div>
+					<div class="right">
+						<img id="clouds" width="150" height="150"></img>
+					</div>
+				</div>	
+				<div class="humidity">
+					<img hspace="15px" src="img/humidity.png" width="30" height="30"></img>
+					<div id="humidity"></div>
+				</div>						
+				<div class="windSpeed">
+					<img hspace="15px" src="img/wind.png" width="30" height="30"></img>
+					<div id="windSpeed"></div>
+				</div>							
+				<div class="pressure">
+					<img hspace="15px" src="img/pressure.png" width="30" height="30"></img>
+					<div id="pressure"></div>
+				</div>						
+			</div>
+		</div>
+	</div>	
+	<script src='listCity.json'></script>   
+	<script src='weather.js'> </script>
+</body>
+</html>
